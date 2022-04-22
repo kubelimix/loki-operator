@@ -37,4 +37,21 @@ rules:
       - patch
       - update
       - watch
+  ##
+  ## Rules for plugins.limix.com/v1, Kind: Loki
+  ##
+  - apiGroups:
+      - plugins.limix.com
+    resources:
+      - lokis
+      - lokis/status
+      - lokis/finalizers
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
 #+kubebuilder:scaffold:rules
